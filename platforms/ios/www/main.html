@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="appmodule">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/angular.js/angular.js" ></script>
+        <link rel="stylesheet" href="css/ratchet/ratchet.css"> 
+        <link rel="stylesheet" href="css/ratchet/ratchet-theme-ios.min.css">
+        <script src="js/libs/ratchet/ratchet.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+        <div ng-view></div>
+        
+        
+<nav class="bar bar-tab" >
+  <a class="tab-item active" href="#">
+    <span class="icon icon-home"></span>
+    <span class="tab-label">订单</span>
+  </a>
+  <a class="tab-item" href="#"> 
+    <span class="icon icon-person"></span>
+    <span class="tab-label">物流</span>
+  </a>
+  <a class="tab-item" href="#reportset">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">报表</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-search"></span>
+    <span class="tab-label">发票</span>
+  </a>
+</nav>
+    </body>
+</html>
