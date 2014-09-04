@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ListViewPage</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="stylesheet" href="../css/ratchet/ratchet.css">
+
+        <script src="../js/libs/ratchet/ratchet.min.js"></script>
+        <style>
+            .icon.icon-nav-font {
+                line-height: 26px;
+                font-size: 17px !important;
+            }
+            .search-nav {
+                position: relative;
+                top: 46px;
+                /* margin: 2px; */
+                margin: 3px;
+                z-index: 100;
+            }
+            .search-nav input {
+                width: 100%;
+                padding: 5px;
+            }
+            .content-padded {
+                margin-top: 15px;
+            }
+            input[type="text"] {
+                margin-bottom: 10px;
+            }
+            .table-view-cell.media {
+                /*                line-height: 42px;*/
+            }
+            div.media-body p a {
+                color: #9b9b9b;
+            }
+            div.media-body p a.amount {
+                float: right;
+            }            
+            strong.total {
+                display: block;
+                margin-top: 10px;
+                color: #CC0033;
+            }
+            .bar-footer {
+                height: 66px;
+                /*opacity: 0.3;*/
+                background-color: #999999;
+            }
+            .bar-footer *{
+                opacity: 1;
+            }
+            div.media-body p button {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <a class="icon icon-left-nav pull-left icon-nav-font">返回</a>
+            <h1 class="title">订单列表</h1>
+        </header>
+
+        <div class="bar bar-footer" style="">
+            <!--<a class="icon icon-compose pull-right" href="#composeModal"></a>-->
+            <button class="btn btn-primary" style="float: right;margin: 10px;">物流跟踪</button>
+            <strong class="total">&yen; 600.00</strong>
+            <small>2014-09-17</small>
+        </div>
+        <div class="content" style="position: relative;top: 20px;padding-top: 12px;">
+            <ul class="table-view">
+                <li class="table-view-cell media">
+                    <div class="media-body">
+                        订单编号：7321140912082913
+                        <p><a>收货方：XX医院黄埔院区</a></p>
+                    </div>
+                </li>
+                <li class="table-view-cell media">
+                    <a class="navigate-right" href="#" data-transition="slide-in">
+                        <div class="media-body">
+                            订单状态：供应商已发货
+                            <p>2014-09-18</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="table-view-cell media" style="background-color: #ddd;">
+
+                        <div class="media-body">
+                            上海伴程医药股份有限公司
+                            <p><button class="btn bar-nav">联系供应商</button><button class="btn bar-nav">供应商信息</button></p>
+                        </div>
+                </li>                
+                <li class="table-view-cell media">
+
+                        <div class="media-body">
+                            手术刀片
+                            <p><a>单价：&yen; 30</a><a class="amount">数量：20包</a></p>
+                        </div>
+                </li>
+            </ul>
+        </div><!-- /.content -->
+
+    </body>
+</html>
