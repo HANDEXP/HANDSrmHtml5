@@ -12,7 +12,7 @@ and open the template in the editor.
         <script src="js/libs/angular.js/angular.js" ></script>
         <link rel="stylesheet" href="css/ratchet/ratchet.css"> 
         <link rel="stylesheet" href="css/ratchet/ratchet-theme-ios.min.css">
-        <script src="js/libs/ratchet/ratchet.min.js"></script>
+        <script src="js/libs/ratchet/js/ratchet.min.js"></script>
         <script src="js/app.js"></script>
     </head>
     <body>
@@ -24,7 +24,7 @@ and open the template in the editor.
     <span class="icon icon-home"></span>
     <span class="tab-label">订单</span>
   </a>
-  <a class="tab-item" href="#"> 
+  <a class="tab-item" href="#" id="toListView"> 
     <span class="icon icon-person"></span>
     <span class="tab-label">物流</span>
   </a>
@@ -37,5 +37,10 @@ and open the template in the editor.
     <span class="tab-label">发票</span>
   </a>
 </nav>
+            <script>
+            document.querySelector("#toListView").addEventListener('touchend',function(){
+                window.location.href="./view/listView.html" 
+            });
+    </script>
     </body>
 </html>

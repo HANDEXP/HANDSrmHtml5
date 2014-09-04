@@ -16,6 +16,8 @@ appmodule.config(['$routeProvider',function ($routeProvider) {
         templateUrl : 'view/reportset.html'
     }).otherwise({
         redirectTo : '/orderquey'
+    }).when('/orderlist',{
+        templateUrl : 'view/listView.html'
     });
 
 }]);
