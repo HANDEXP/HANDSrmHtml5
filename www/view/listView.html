@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="../css/ratchet/ratchet.css">
 
-        <script src="../js/libs/ratchet/ratchet.min.js"></script>
+        <!--<script src="../js/libs/ratchet/ratchet.min.js"></script>-->
         <style>
             .icon.icon-nav-font {
                 line-height: 26px;
@@ -66,7 +66,7 @@
         <div class="bar bar-footer" style="">
             <!--<a class="icon icon-compose pull-right" href="#composeModal"></a>-->
             <button class="btn btn-primary" style="float: right;margin: 10px;">物流跟踪</button>
-            <strong class="total">&yen; 600.00</strong>
+            <strong class="total">&yen; 800.00</strong>
             <small>2014-09-17</small>
         </div>
         <div class="search-nav">
@@ -83,14 +83,24 @@
                         <p><a>单价：&yen; 30</a><a class="amount">数量：20包</a></p>
                     </div>
                 </li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        口罩
+                        <p><a>单价：&yen; 10</a><a class="amount">数量：20包</a></p>
+                    </div>
+                </li>
             </ul>
         </div><!-- /.content -->
         <script>
-            document.querySelector(".media").addEventListener('touchend',function(){
-                window.location.href="./detail.html" 
-            });
-            document.querySelector(".pull-left").addEventListener('touchend',function(){
-                window.location.href="../main.html" 
+            var obj = document.querySelectorAll(".media");
+            for (var i=0,len = obj.length; i < len; i++) {
+                obj[i].addEventListener('touchend', function() {
+                    window.location.href = "./detail.html"
+                });
+            }
+            document.querySelector(".pull-left").addEventListener('touchend', function() {
+                window.location.href = "../main.html"
             });
         </script>
     </body>
