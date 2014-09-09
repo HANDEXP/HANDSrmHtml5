@@ -68,6 +68,7 @@
 		B22B99DB75D54DEFBF0427B8 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F04B5C8F62448F0B7940E9D /* CDVNotification.m */; };
 		59FDFA019E3C45B4B91FEBA2 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B902C9880074764B7BC239E /* CDVNotification.bundle */; };
 		9FBEEB92E1F04D218E7140A5 /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E1984CC6E94E89B0055C38 /* CDVCompass.m */; };
+		10F3CB50E0AB4A96AB2115E3 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F80C7C6AAE449A19DB3D5FB /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,8 @@
 		2B902C9880074764B7BC239E /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
 		49E1984CC6E94E89B0055C38 /* CDVCompass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVCompass.m"; path = "org.apache.cordova.device-orientation/CDVCompass.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		C26EA31A7AA14C3AA693BEDB /* CDVCompass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVCompass.h"; path = "org.apache.cordova.device-orientation/CDVCompass.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7F80C7C6AAE449A19DB3D5FB /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		3014098D18AD4A3CA35A3CF2 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +367,8 @@
 				4366476338614849AD659465 /* CDVNotification.h */,
 				49E1984CC6E94E89B0055C38 /* CDVCompass.m */,
 				C26EA31A7AA14C3AA693BEDB /* CDVCompass.h */,
+				7F80C7C6AAE449A19DB3D5FB /* CDVStatusBar.m */,
+				3014098D18AD4A3CA35A3CF2 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = "HANDSrmHtml5/Plugins";
@@ -582,6 +587,7 @@
 				CE4B1D1136644479B4461629 /* CDVAccelerometer.m in Sources */,
 				B22B99DB75D54DEFBF0427B8 /* CDVNotification.m in Sources */,
 				9FBEEB92E1F04D218E7140A5 /* CDVCompass.m in Sources */,
+				10F3CB50E0AB4A96AB2115E3 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

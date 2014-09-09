@@ -143,8 +143,11 @@ text-align: center;
             <script>
             document.querySelector("#toListView").addEventListener('touchend',function(){
                 window.location.href="./view/listView.html" 
-            });
-            
+            });   
+            document.addEventListener("touchmove",function(e){
+                e.preventDefault(); 
+                return false;                 
+            },false);
     </script>
     </body>
 </html>

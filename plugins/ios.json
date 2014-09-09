@@ -75,6 +75,22 @@
                         {
                             "xml": "<feature name=\"Compass\"><param name=\"ios-package\" value=\"CDVCompass\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -192,6 +208,9 @@
             "PACKAGE_NAME": "com.coolappz.HANDSrmHtml5"
         },
         "org.apache.cordova.device-orientation": {
+            "PACKAGE_NAME": "com.coolappz.HANDSrmHtml5"
+        },
+        "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "com.coolappz.HANDSrmHtml5"
         }
     },

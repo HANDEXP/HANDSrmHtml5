@@ -322,6 +322,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.statusbar/www/statusbar.js",
+        "id": "org.apache.cordova.statusbar.statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -471,7 +478,7 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.device": "0.2.12-dev",
+    "org.apache.cordova.device": "0.2.11",
     "org.apache.cordova.vibration": "0.3.11-dev",
     "org.apache.cordova.splashscreen": "0.3.3-dev",
     "org.apache.cordova.camera": "0.3.2-dev",
@@ -487,6 +494,7 @@ module.exports.metadata =
     "org.apache.cordova.device-motion": "0.2.10-dev",
     "org.apache.cordova.dialogs": "0.2.10-dev",
     "org.apache.cordova.device-orientation": "0.3.9-dev",
+    "org.apache.cordova.statusbar": "0.1.7",
     "org.apache.cordova.file": "1.3.0"
 }
 // BOTTOM OF METADATA
