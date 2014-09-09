@@ -18,9 +18,8 @@ and open the template in the editor.
                             background-size: 320px 480px;
                         }*/
             body {
-                padding-top: 40px;
-                padding-bottom: 40px;
-                background-color: #f5f5f5;
+                padding-top: 25px;
+                background-color: #d6d6d6;
             }
             h2, h3 {
                 text-align: center;
@@ -29,31 +28,59 @@ and open the template in the editor.
                 position: inherit;
                 left: 55%;
             }
+            .img-responsive {
+                width: 35%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 15%;
+                margin-top: 10%;
+            }
+            .form-control {
+                margin-bottom: 10px;
+                height: 45px;
+            }
+            .bottomButton {
+                margin-left: 32%;
+                margin-right: 32%;
+                width: 88px;
+                /* margin-top: 22%; */
+                position: fixed;
+                bottom: 0;
+                margin-bottom: 25px;
+            }
+            input#username {
+
+            }
         </style>
     </head>
     <body>
 
 
-    <div class="container">
+        <div class="container">
 
-      <form class="form-signin" role="form">
-          <input type="text" id="username" class="form-control" placeholder="账号" required autofocus>
-        <input type="password" id="password" class="form-control" placeholder="密码" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="rememberMe"> 记住登录
-          </label>
-            <label>
-                <button class="btn btn-link" id="signUp">注册</button>
-            </label>
-      <button class="btn btn-lg btn-danger btn-block" type="submit">登录</button>
-                <h2 class="form-signin-heading">汉得云</h2>
-                <h3 style="font-size: xx-small;">Hand Cloud</h3>
-      </form>
-<!--        <p class="title">汉得云</p>
-        <p class="title subTitle">Hand Cloud</p>-->
-    </div> 
+            <form class="form-signin" role="form">
+                <!--                <h2 class="form-signin-heading">汉得云</h2>
+                                <h3 style="font-size: xx-small;">Hand Cloud</h3>-->
+                <img src="../image/logo.png" class="img-responsive"/>
+                <input type="text" id="username" class="form-control" placeholder="账号" required autofocus>
+                <input type="password" id="password" class="form-control" placeholder="密码" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+                <div class="checkbox">
+                    <label style="padding-bottom: 2px;color: white;">
+                        <input type="checkbox" value="rememberMe" style=""> 记住登录
+                    </label>
+                    <label  style="float: right;">
+                        <a id="signUp" style="padding: 0px;color: white;">忘记密码</a>
+                    </label>
 
+            </form>
+            <!--        <p class="title">汉得云</p>
+                    <p class="title subTitle">Hand Cloud</p>-->
+
+        </div> 
+        <div class="bottomButton">
+            <button type="submit" class="btn btn-default" style="width: 88px;">注册</button>
+        </div>
         <script>
 
         </script>
