@@ -13,6 +13,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/ratchet/ratchet.css"> 
         <link rel="stylesheet" href="css/ratchet/ratchet-theme-ios.min.css">
         <script src="js/libs/ratchet/js/ratchet.min.js"></script>
+       <script src="js/libs/Chart.js"></script>
         <script src="js/app.js"></script>
     </head>
     <style>
@@ -122,12 +123,12 @@ text-align: center;
         <div ng-view></div>
         
         
-<nav class="bar bar-tab" >
+<nav class="bar bar-tab" id="bottom_bar" >
   <a class="tab-item active" href="#">
     <span class="icon icon-bar icon-srmorder"></span>
     <span class="tab-label">订单</span>
   </a>
-  <a class="tab-item" href="#" id="toListView"> 
+  <a class="tab-item" href="#orderlist" id="toListView"> 
     <span class="icon icon-bar icon-srmlogistics"></span>
     <span class="tab-label">物流</span>
   </a>

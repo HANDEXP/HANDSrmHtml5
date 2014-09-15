@@ -241,7 +241,7 @@
 			};
 		},
 		findPreviousWhere = helpers.findPreviousWhere = function(arrayToSearch, filterCallback, startIndex){
-			// Default to end of the array
+			// Default to end of the arrayƒ
 			if (!startIndex){
 				startIndex = arrayToSearch.length;
 			}
@@ -2285,7 +2285,8 @@
 		initialize:  function(data){
 
 			//Declare segments as a static property to prevent inheriting across the Chart type prototype
-			this.segments = [];
+		
+                        this.segments = [];
 			this.outerRadius = (helpers.min([this.chart.width,this.chart.height]) -	this.options.segmentStrokeWidth/2)/2;
 
 			this.SegmentArc = Chart.Arc.extend({
