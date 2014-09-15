@@ -19,7 +19,7 @@ appmodule.config(['$routeProvider',function ($routeProvider) {
     }).when('/orderlist',{
         templateUrl : 'view/listView.html'
     }).when('/pie',{
-        controller: 'pieController',
+//        controller: 'pieController',
         templateUrl : 'view/pie.html'
     });
 
@@ -71,7 +71,7 @@ appmodule.controller('pieController',function($scope){
 
 			             document.getElementById("qwe").addEventListener('touchend', function() {
                 window.location.href = "#";
-                document.getElementById("bottom_bar").style.display ="inline-block";
+                document.getElementById("bottom_bar").style.display ="block";
             });
                         
 				var ctx = document.getElementById("chart-area").getContext("2d");
