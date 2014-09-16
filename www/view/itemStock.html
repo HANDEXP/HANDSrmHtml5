@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>寄售库存量</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../css/ratchet/ratchet.css"> 
+        <style>
+            .icon.icon-nav-font {
+                line-height: 26px;
+                font-size: 17px !important;
+            }
+            .search-nav {
+                position: relative;
+                top: 46px;
+                /* margin: 2px; */
+                margin: 3px;
+                z-index: 100;
+            }
+            .search-nav input {
+                width: 100%;
+                padding: 5px;
+            }
+            .content-padded {
+                margin-top: 15px;
+            }
+            input[type="text"] {
+                margin-bottom: 10px;
+            }
+            .table-view-cell.media {
+                /*                line-height: 42px;*/
+            }
+            div.media-body p a {
+                color: #9b9b9b;
+            }
+            div.media-body p a.amount {
+                float: right;
+            }            
+            strong.total {
+                display: block;
+                margin-top: 10px;
+                color: #CC0033;
+            }
+            .bar-footer {
+                height: 66px;
+                /*opacity: 0.3;*/
+                background-color: #999999;
+            }
+            .bar-footer *{
+                opacity: 1;
+            }
+            
+            li span.total {
+                float: right;
+                font-size: 12px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="bar bar-nav">
+            <a class="icon icon-left-nav pull-left icon-nav-font">返回</a>
+            <h1 class="title">寄售库存量</h1>
+        </header>
+        <div class="search-nav">
+            <input type="text" placeholder="搜索物料">
+        </div>
+        <div class="content" style="position: relative;top: 20px;padding-top: 2px;">
+
+            <ul class="table-view">
+                <li class="table-view-cell table-view-divider">医用纱布<span class="total">总计:1020包</span></li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        供应商：台州宏发股份有限公司
+                        <p><a>单价：&yen; 36.00</a><a class="amount">数量：20包</a></p>
+                    </div>
+                </li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        供应商：泰州丰源实业有限公司
+                        <p><a>单价：&yen; 5.20</a><a class="amount">数量：1000包</a></p>
+                    </div>
+                </li>
+                <li class="table-view-cell table-view-divider">骨科专用包<span class="total">总计:50包</span></li>
+                 <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        供应商：台州宏发股份有限公司
+                        <p><a>单价：&yen; 520.00</a><a class="amount">数量：50包</a></p>
+                    </div>
+                </li>               
+            </ul>
+            
+        </div>
+    </body>
+    
+</html>
