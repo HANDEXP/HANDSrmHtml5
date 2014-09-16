@@ -152,7 +152,7 @@ text-align: center;
         
         
 <nav class="bar bar-tab" id="bottom_bar" >
-  <a class="tab-item active" href="./view/listView.html">
+    <a class="tab-item active" id="toListView">
     <span class="icon icon-bar icon-srmorder"></span>
     <span class="tab-label">订单</span>
   </a>
@@ -179,9 +179,9 @@ text-align: center;
                 $('#body').addClass("slideBottom");
               }
                 
-//            document.querySelector("#toListView").addEventListener('touchend',function(){
-//                window.location.href="./view/listView.html" 
-//            }); 
+            document.querySelector("#toListView").addEventListener('touchend',function(){
+                window.location.href="./view/listView.html" 
+            }); 
             
             
             document.addEventListener("touchmove",function(e){
