@@ -55,11 +55,36 @@ and open the template in the editor.
             .bar-footer *{
                 opacity: 1;
             }
-            
+
             li span.total {
                 float: right;
                 font-size: 12px;
                 color: red;
+            }
+            li div.media-body {
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                -o-text-overflow:ellipsis;
+
+            }
+            .bar-nav ~ .content {
+                padding-top: 0px;
+            }
+            div.slid-nav {
+                height: 82%;
+margin: 88px 0px 60px 0px;
+background-color: #CCC;
+position: relative;
+/* top: 100px; */
+width: 30px;
+float: right;
+opacity: 0.5;
+            }
+            div a.slid-nav-item {
+font-size: 15px;
+line-height: 15px;
+text-align: center;
             }
         </style>
     </head>
@@ -68,30 +93,103 @@ and open the template in the editor.
             <a class="icon icon-left-nav pull-left icon-nav-font">返回</a>
             <h1 class="title">供应商名录</h1>
         </header>
-        <div class="search-nav">
-            <input type="text" placeholder="搜索供应商">
-        </div>
-        <div class="content" style="position: relative;top: 20px;padding-top: 2px;">
 
-            <ul class="table-view">
-                <li class="table-view-cell table-view-divider">医用纱布</li>
+        <div class="content" style="position: absolute;">
+            <div class="search-nav" style="position: relative;
+                 z-index: 0;">
+                <input type="text" placeholder="搜索供应商">
+            </div>
+            <ul class="table-view" style="top: 90px;
+                position: absolute;width: 100%;">
+                <li class="table-view-cell table-view-divider">G</li>
                 <li class="table-view-cell media">
 
                     <div class="media-body">
-                        供应商：台州宏发股份有限公司
-                        <p><a>单价：&yen; 36.00</a><a class="amount">数量：20包</a></p>
+                        广西中美生物制剂有限公司
                     </div>
                 </li>
                 <li class="table-view-cell media">
 
                     <div class="media-body">
-                        供应商：泰州丰源实业有限公司
-                        <p><a>单价：&yen; 5.20</a><a class="amount">数量：1000包</a></p>
+                        广州正德中医药股份有限公司销售
                     </div>
-                </li>           
+                </li>    
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        广州正德中医药股份有限公司
+                    </div>
+                </li> 
+                <li class="table-view-cell table-view-divider">S</li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        上海伴程医药股份有限公司
+                    </div>
+                </li>   
+                <li class="table-view-cell table-view-divider">T</li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        台州宏发股份有限公司
+                    </div>
+                </li> 
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        泰州丰源实业有限公司
+                    </div>
+                </li>
+                <li class="table-view-cell table-view-divider" id="x">X</li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        邢台景盛医疗器械股份有限公司
+                    </div>
+                </li>
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        徐州华清生物科技股份有限公司
+                    </div>
+                </li>    
+                <li class="table-view-cell media">
+
+                    <div class="media-body">
+                        徐州兆域生物科技股份有限公司
+                    </div>
+                </li>                 
             </ul>
-            
+
+        </div>
+        <div class="slid-nav">
+            <a class="slid-nav-item" style="display: block">A</a>
+            <a class="slid-nav-item" style="display: block">B</a>
+            <a class="slid-nav-item" style="display: block">C</a>
+            <a class="slid-nav-item" style="display: block">D</a>
+            <a class="slid-nav-item" style="display: block">E</a>
+            <a class="slid-nav-item" style="display: block">F</a>
+            <a class="slid-nav-item" style="display: block">G</a>
+            <a class="slid-nav-item" style="display: block">H</a>
+            <a class="slid-nav-item" style="display: block">I</a>
+            <a class="slid-nav-item" style="display: block">J</a>
+            <a class="slid-nav-item" style="display: block">K</a>
+            <a class="slid-nav-item" style="display: block">L</a>
+            <a class="slid-nav-item" style="display: block">M</a>
+            <a class="slid-nav-item" style="display: block">N</a>
+            <a class="slid-nav-item" style="display: block">O</a>
+            <a class="slid-nav-item" style="display: block">P</a>
+            <a class="slid-nav-item" style="display: block">Q</a>
+            <a class="slid-nav-item" style="display: block">R</a>
+            <a class="slid-nav-item" style="display: block">S</a>
+            <a class="slid-nav-item" style="display: block">T</a>
+            <a class="slid-nav-item" style="display: block">U</a>
+            <a class="slid-nav-item" style="display: block">V</a>
+            <a class="slid-nav-item" style="display: block">W</a>
+            <a class="slid-nav-item" style="display: block" href="#x">X</a>
+            <a class="slid-nav-item" style="display: block">Y</a>
+            <a class="slid-nav-item" style="display: block">Z</a>            
         </div>
     </body>
-    
+
 </html>
