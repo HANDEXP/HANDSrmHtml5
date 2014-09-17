@@ -11,58 +11,17 @@
         <link rel="stylesheet" href="../css/ratchet/ratchet.css">
 
         <script src="../js/libs/ratchet/js/ratchet.min.js"></script>
-        <style>
-            .icon.icon-nav-font {
-                line-height: 26px;
-                font-size: 17px !important;
-            }
-            .search-nav {
-                position: relative;
-                top: 46px;
-                /* margin: 2px; */
-                margin: 3px;
-                z-index: 100;
-            }
-            .search-nav input {
-                width: 100%;
-                padding: 5px;
-            }
-            .content-padded {
-                margin-top: 15px;
-            }
-            input[type="text"] {
-                margin-bottom: 10px;
-            }
-            .table-view-cell.media {
-                /*                line-height: 42px;*/
-            }
-            div.media-body p a {
-                color: #9b9b9b;
-            }
-            div.media-body p a.amount {
-                float: right;
-            }            
-            strong.total {
-                display: block;
-                margin-top: 10px;
-                color: #CC0033;
-            }
-            .bar-footer {
-                height: 66px;
-                /*opacity: 0.3;*/
-                background-color: #999999;
-            }
-            .bar-footer *{
-                opacity: 1;
-            }
-        </style>
+
     </head>
     <body>
+       
+      
         <header class="bar bar-nav">
-            <a class="icon icon-left-nav pull-left icon-nav-font">返回</a>
+            <a class="icon icon-left-nav pull-left icon-nav-font" data-transition="slide-out" href="../main.html">返回</a>
             <h1 class="title">订单列表</h1>
         </header>
-
+        
+          <div class="content">
         <div class="bar bar-footer" style="">
             <!--<a class="icon icon-compose pull-right" href="#composeModal"></a>-->
             <button class="btn btn-primary" style="float: right;margin: 10px;">物流跟踪</button>
@@ -72,7 +31,7 @@
         <div class="search-nav">
             <input type="text" placeholder="搜索订单">
         </div>
-        <div class="content" style="position: relative;top: 20px;padding-top: 2px;">
+        <div  style="position: relative;top: 20px;padding-top: 2px;">
 
             <ul class="table-view">
                 <li class="table-view-cell table-view-divider">上海伴程医药股份有限公司</li>
@@ -80,7 +39,7 @@
 
                     <div class="media-body">
                         手术刀片
-                        <p><a>单价：&yen; 30</a><a class="amount">数量：20包</a></p>
+                        <p><a href="./detail.html" data-transition="slide-in" >单价：&yen; 30</a><a class="amount">数量：20包</a></p>
                     </div>
                 </li>
                 <li class="table-view-cell media">
@@ -92,16 +51,17 @@
                 </li>
             </ul>
         </div><!-- /.content -->
+        </div>
         <script>
             var obj = document.querySelectorAll(".media");
-            for (var i=0,len = obj.length; i < len; i++) {
-                obj[i].addEventListener('touchend', function() {
-                    window.location.href = "./detail.html"
-                });
-            }
-            document.querySelector(".pull-left").addEventListener('touchend', function() {
-                window.location.href = "../main.html"
-            });
+//            for (var i=0,len = obj.length; i < len; i++) {
+//                obj[i].addEventListener('touchend', function() {
+//                    window.location.href = "./detail.html"
+//                });
+//            }
+//            document.querySelector(".pull-left").addEventListener('touchend', function() {
+//                window.location.href = "../main.html"
+//            });
             document.addEventListener("touchmove",function(e){
                 e.preventDefault();
                 return false;

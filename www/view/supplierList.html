@@ -90,11 +90,11 @@ text-align: center;
     </head>
     <body>
         <header class="bar bar-nav">
-            <a class="icon icon-left-nav pull-left icon-nav-font">返回</a>
+            <a class="icon icon-left-nav pull-left icon-nav-font" href="../main.html" data-transition="slide-out">返回</a>
             <h1 class="title">供应商名录</h1>
         </header>
-
-        <div class="content" style="position: absolute;">
+        <div class="content">
+        <div  style="position: absolute;">
             <div class="search-nav" style="position: relative;
                  z-index: 0;">
                 <input type="text" placeholder="搜索供应商">
@@ -190,6 +190,7 @@ text-align: center;
             <a class="slid-nav-item" style="display: block">Y</a>
             <a class="slid-nav-item" style="display: block">Z</a>            
         </div>
+    </div>
             <script>
                 document.querySelector(".pull-left").addEventListener('touchend', function() {
                 window.location.href = "../main.html"
