@@ -9,12 +9,13 @@ var appmodule = angular.module('appmodule', []);
 
 appmodule.config(['$routeProvider',function ($routeProvider) {
     $routeProvider.when('/orderquey',{
-        controller: 'TextController',
+        controller: 'orderqueryController',
         templateUrl : 'view/orderquery.html' 
         
     }).when('/reportset',{
         templateUrl : 'view/reportset.html'
     }).otherwise({
+        controller: 'orderqueryController',
         redirectTo : '/orderquey'
     }).when('/orderlist',{
         templateUrl : 'view/listView.html'
@@ -24,6 +25,15 @@ appmodule.config(['$routeProvider',function ($routeProvider) {
     });
 
 }]);
+
+appmodule.controller('orderqueryController',function($scope){
+    document.querySelector('.icon-srm02').addEventListener('touchend',function(e){
+        window.location.href = "./view/supplierList.html"
+    },false);
+    document.querySelector('.icon-srm06').addEventListener('touchend',function(e){
+        window.location.href = "./view/itemStock.html"
+    },false);
+});
 
 appmodule.controller('TextController',function($scope){
 

@@ -108,6 +108,7 @@
   // ==========================================
 
   var touchend = function (e) {
+     alert(1);
     var target = getTarget(e);
 
     if (!target) {

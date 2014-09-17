@@ -10,18 +10,18 @@
 
         <link rel="stylesheet" href="../css/ratchet/ratchet.css">
 
-        <script src="../js/libs/ratchet/js/ratchet.min.js"></script>
+<!--        <script src="../js/libs/ratchet/js/ratchet.min.js"></script>-->
 
     </head>
     <body>
        
       
         <header class="bar bar-nav">
-            <a class="icon icon-left-nav pull-left icon-nav-font" data-transition="slide-out" href="../main.html">返回</a>
+            <a class="icon icon-left-nav pull-left icon-nav-font" data-direction="reverse" data-transition="slide" href="../main.html">返回</a>
             <h1 class="title">订单列表</h1>
         </header>
         
-          <div class="content">
+          <div class="content" data-role="content">
         <div class="bar bar-footer" style="">
             <!--<a class="icon icon-compose pull-right" href="#composeModal"></a>-->
             <button class="btn btn-primary" style="float: right;margin: 10px;">物流跟踪</button>
@@ -39,14 +39,14 @@
 
                     <div class="media-body">
                         手术刀片
-                        <p><a href="./detail.html" data-transition="slide-in" >单价：&yen; 30</a><a class="amount">数量：20包</a></p>
+                        <p><a href="./detail.html"  data-transition="slide" >单价：&yen; 30</a><a class="amount">数量：20包</a></p>
                     </div>
                 </li>
                 <li class="table-view-cell media">
 
                     <div class="media-body">
                         口罩
-                        <p><a>单价：&yen; 10</a><a class="amount">数量：20包</a></p>
+                        <p><a href="./detail.html"  data-transition="slide">单价：&yen; 10</a><a class="amount">数量：20包</a></p>
                     </div>
                 </li>
             </ul>
