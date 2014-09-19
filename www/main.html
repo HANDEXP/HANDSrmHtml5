@@ -89,11 +89,12 @@ and open the template in the editor.
     }
     td {
         width: 30%;
-        height: 106px;
+        height: 130px;
+        background-color: #fff;
 /*        border-style: outset;
         border-width: 0px;
         border-color: snow;*/
-border:10px solid #fff;
+border:10px solid #eeeeee;
  color: #999999;
 font-size: 14px;
 text-align: center;
@@ -155,7 +156,7 @@ text-align: center;
     <style type="text/css">
 
     body {
-        background-color: #eeeeee;
+        background-color: #fff;
     }
     ul, ol, li {
         list-style: none;
@@ -185,7 +186,7 @@ text-align: center;
 
 
     .mb-os {
-        height: 66px;
+        height: 88px;
         background-color: transparent;;
         box-shadow: 0 1px 3px rgba(0,0,0,.1);
         -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.1);
@@ -194,7 +195,9 @@ text-align: center;
 
     .mb-os ul{
         display: -webkit-box;
-        padding:0
+        padding:0;
+position: relative;
+top: 10px;
     }
 
 
@@ -205,7 +208,14 @@ text-align: center;
         position: relative;
         font-size: 10px;
     }
-
+    .mb-os ul li a p {
+        color:#494949;
+        -webkit-box-flex: 1;
+        text-align: center;
+        position: relative;
+        font-size: 10px;
+        top: -10px;
+    }
     .mb-os ul a {
         color: #494949;
         font-weight: bolder;
@@ -214,18 +224,19 @@ text-align: center;
     .mb-os ul li strong {
         color: #c00505;
         display: block;
-        font-size: 16px;
+
         font-weight: 700;
         position: relative;
-        top: -5px;
+        top: -15px;
+        font-size: 40px;
     }
 
     .mb-os ul li:after {
         content: ' ';
         position: absolute;
-        top: -5px;
+        top: -15px;
         right: -1px;
-        height: 42px;
+        height: 64px;
         border-right: 1px #999999 solid;
     }
 </style>
@@ -298,29 +309,33 @@ text-align: center;
     <ul>
         <li>
             <a>
+                
+                <p>待发货</p>
                 <strong >2</strong>
-                待付款
             </a>
 
         </li>
         <li>
             <a >
+                
+                <p>待接收</p>
                 <strong >11</strong>
-                待接收
             </a>
 
         </li>
         <li>
             <a>
+                
+                <p>待开票</p>
                 <strong >3</strong>
-                待开票
             </a>
 
         </li>
         <li>
             <a>
+                
+                <p>待付款</p>
                 <strong >0</strong>
-                待付款
             </a>
 
         </li>
@@ -335,8 +350,8 @@ text-align: center;
             </span>
             预制采购单
         </td>
-        <td>
-            <a href="./view/supplierList.html" data-transition="slide" >
+        <td >
+            <a href="./view/supplierList.html" data-transition="slide" style="color: #999999;">
             <span class="icon-big icon-srm02">
             </span>
             
@@ -350,15 +365,18 @@ text-align: center;
     </tr>
     <tr>
         <td>
+            <a href="./view/reportset.html" data-ajax="false" style="color: #999999;">
             <span class="icon-big icon-srm04">
             </span>
-            报表仪表盘</td>
+            报表仪表盘
+            </a>
+            </td>
         <td>
             <span class="icon-big icon-srm05">
             </span>
             预售领用记录</td>
         <td>
-            <a href="./view/itemStock.html" data-transition="slide">
+            <a href="./view/itemStock.html" data-transition="slide" style="color: #999999;">
             <span class="icon-big icon-srm06" >
             </span>
             寄售库存查询
@@ -379,9 +397,9 @@ text-align: center;
     <span class="icon icon-bar icon-srmlogistics"></span>
     <span class="tab-label">物流</span>
   </a>
-  <a class="tab-item" href="./view/reportset.html" data-transition="slide"  data-selector=".device-content" >
+  <a class="tab-item">
     <span class="icon icon-bar icon-srmreport"></span>
-    <span class="tab-label">报表</span>
+    <span class="tab-label">账单</span>
   </a>
   <a class="tab-item" href="#">
     <span class="icon icon-bar icon-invoice"></span>

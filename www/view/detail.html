@@ -74,7 +74,7 @@
                     </div>
                 </li>
                 <li class="table-view-cell media">
-                    <a class="navigate-right" href="#" data-transition="slide-in">
+                    <a class="navigate-right">
                         <div class="media-body">
                             订单状态：供应商已发货
                             <p>2014-09-18</p>
@@ -86,7 +86,21 @@
 
                         <div class="media-body">
                             上海伴程医药股份有限公司
-                            <p><button class="btn bar-nav">联系供应商</button><button class="btn bar-nav">供应商信息</button></p>
+                            <p><div style="display: inline-block;
+background-color: white;
+border: 1px solid #eeeeee;
+border-radius: 2px;
+padding: 1px 3px;
+font-size: 12px;
+margin: 5px;
+">联系供应商</div><div style="display: inline-block;
+background-color: white;
+border: 1px solid #eeeeee;
+border-radius: 2px;
+padding: 1px 3px;
+font-size: 12px;
+margin: 5px;
+">供应商信息</div></p>
                         </div>
                 </li>                
                 <li class="table-view-cell media">
@@ -125,12 +139,15 @@
                     </div>
                 </li>  
             </ul>
-        </div><!-- /.content -->
-                <div class="bar bar-footer" style="">
+        <div class="bar bar-footer" style="">
             <!--<a class="icon icon-compose pull-right" href="#composeModal"></a>-->
-            <button class="btn btn-primary" style="float: right;margin: 10px;">物流跟踪</button>
-            <strong class="total">&yen; 800.00</strong>
-            <small>2014-09-17</small>
+            <div style="height: 20px;
+width: 70px;
+margin: 20px;
+float: right;
+background-color: #33CCFF;">物流跟踪</div>
+            <strong class="total" style="margin-left: 20px;">&yen; 800.00</strong>
+            <small style="margin-left: 20px;">2014-09-17</small>
         </div>
         <script>
             document.querySelector(".pull-left").addEventListener('touchend',function(){
